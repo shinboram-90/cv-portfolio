@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisa Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/images/cabin.svg" alt="illustration of an avatar" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <form name="form1">
+      <input
+        name="deftext"
+        type="text"
+        class="section__subtitle section__subtitle--intro"
+      />
+    </form>
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi there, I am <strong>Lisa Chatellier</strong>
+      </h1>
+      <img src="/images/profile.svg" alt="an illustration" class="intro__img" />
+    </section>
+
+    <!-- MY SERVICES -->
+
+    <div id="particles-js"></div>
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I know</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Front End</h3>
+          <p class="service__p">
+            Bootstrap basics, add more details here Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Fugit assumenda sequi ipsam odio autem
+            beatae deleniti labore debitis eaque. Recusandae rem, eos harum enim
+            officiis autem dicta beatae delectus vero.
+          </p>
+        </div>
+        <!-- service -->
+
+        <div class="service">
+          <h3>Back End</h3>
+          <p class="service__p">
+            description, elaborate more pleazzz Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Aliquid, minima porro vero quaerat,
+            hic dignissimos, maiores numquam provident dolor ut enim eum! Amet
+            fugiat temporibus assumenda iusto a unde? Eius!
+          </p>
+        </div>
+        <!-- service -->
+
+        <div class="service">
+          <h3>Third-party Services</h3>
+          <p class="service__p">
+            Oh yeah oh yeah Heroku and tralala Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Ratione nobis saepe illum laudantium
+            sit, exercitationem odio, dolor inventore quo voluptate impedit
+            sequi nisi maiores aut placeat error, magnam ex libero.
+          </p>
+        </div>
+        <!-- service -->
+      </div>
+      <a href="#work" class="btn">My work</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Passionate about everything I do, I recently completed the "Le Wagon"
+        bootcamp where I've learnt how to code with Ruby on Rails.
+      </p>
+      <div class="about-me__body">
+        <p>
+          After 10 years in the hospitality industry, I decided to take a new
+          career path and by chance I entered the world of programming.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          tenetur eveniet eaque inventore beatae tempore, nihil magni fugiat
+          nam, deleniti nesciunt minus quae possimus qui praesentium at
+          recusandae ad ipsam?
+        </p>
+      </div>
+      <img
+        src="/images/about.svg"
+        alt="illustration of a girl"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- MY WORK -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle">Bon y'a rien pour le moment la lose</p>
+      <div class="portfolio">
+        <a
+          href="https://a-day-in-a-movie.herokuapp.com"
+          class="portfolio__item"
+        >
+          <h4 class="portfolio__title">A day in a movie</h4>
+          <img
+            src="/images/movie.jpg"
+            class="portfolio__img"
+            alt="screenshot of my website a day in a movie"
+          />
+        </a>
+        <a href="http://www.woodstock-design.store/" class="portfolio__item">
+          <h4 class="portfolio__title">Woodstock</h4>
+          <img
+            src="/images/woodstock.jpg"
+            class="portfolio__img"
+            alt="3D table from woodstock website"
+          />
+        </a>
+        <a href="#" class="portfolio__item">
+          <h4 class="portfolio__title">Stay tuned !</h4>
+          <img
+            src="/images/more.png"
+            class="portfolio__img"
+            alt="illustration of a girl and a computer"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="mailto:lisachatellier90@gmail.com" class="footer-link"
+        >lisachatellier90@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/shinboram-90"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/lisa-chatellier/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/shin_boram"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
