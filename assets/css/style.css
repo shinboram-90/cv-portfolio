@@ -354,6 +354,7 @@ header {
 .about-me {
   max-width: 1100px;
   margin: 0 auto;
+  background-color: var(--clr-light);
 }
 
 .about-me__img {
@@ -483,7 +484,7 @@ header {
 /* PARTICLES */
 
 #particles-js {
-  height: 590px;
+  height: 900px;
   position: absolute;
   width: 100%;
   margin: 0;
@@ -495,7 +496,7 @@ header {
 
 @media (max-width: 600px) {
   #particles-js {
-    height: 920px;
+    height: 2000px;
   }
 }
 
