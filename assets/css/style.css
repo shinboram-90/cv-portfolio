@@ -349,7 +349,6 @@ header {
 .about-me {
   max-width: 1100px;
   margin: 0 auto;
-  background-color: var(--clr-light);
 }
 
 .about-me__img {
@@ -495,8 +494,7 @@ header {
   }
 }
 
-/* @media (max-width: 800px) {
-  #particles-js {
-    height: 1500px;
-  }
-} */
+.container {
+  width: 100%;
+  background-color: var(--clr-light);
+}
