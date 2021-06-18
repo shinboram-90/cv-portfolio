@@ -16,8 +16,8 @@
   --clr-accent: rgba(22, 224, 189, 0.7);
   /* #16e0bd; plus flashy ptet mieux*/
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h1: 2rem;
+  --fs-h2: 1.7rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
@@ -129,7 +129,7 @@ h3 {
 }
 
 section {
-  padding: 2em 4em;
+  padding: 2em 2.4em;
 }
 
 /* NAVBAR */
@@ -271,11 +271,6 @@ header {
     grid-template-columns: min-content max-content;
   }
 
-  h1 {
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-
   .intro__img {
     grid-area: img;
     min-width: 400px;
@@ -400,8 +395,8 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
 }
 
 .portfolio__title {
@@ -496,7 +491,7 @@ header {
 
 @media (max-width: 600px) {
   #particles-js {
-    height: 2000px;
+    height: 1600px;
   }
 }
 
