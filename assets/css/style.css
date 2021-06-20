@@ -270,7 +270,7 @@ header {
     display: grid;
     width: min-content;
     margin: 0 auto;
-    grid-column-gap: 2em;
+    grid-column-gap: 2.5em;
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -341,7 +341,13 @@ header {
 @media (min-width: 800px) {
   .services {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+
+  .service {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
   }
   /* 
   .services + .service {
