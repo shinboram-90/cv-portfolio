@@ -97,10 +97,15 @@ h2 {
 }
 h3 {
   font-size: var(--fs-h3);
+  /* padding-bottom: 10px;
+  padding-top: 10px; */
 }
 
+h4 {
+  margin: 0;
+}
 .section__title {
-  margin-bottom: 0.25em;
+  margin-bottom: 1em;
 }
 
 .my-work > .section__title {
@@ -130,7 +135,7 @@ h3 {
 }
 
 section {
-  padding: 2em 2.4em;
+  padding: 2em 2em;
 }
 
 /* NAVBAR */
@@ -303,6 +308,8 @@ header {
   /* background: url(/assets/images/projects.svg); */
   color: var(--clr-dark);
   text-align: center;
+  padding: 2em 0 2em 0;
+  /* margin-bottom: 1em; */
 }
 
 .section__title--services {
@@ -310,66 +317,64 @@ header {
   position: relative;
 }
 
+/*--------------- underline --------------*/
+
 .section__title--services::after {
   content: "";
   display: block;
-  width: 2em;
+  width: 2.5em;
   height: 1px;
-  margin: 0.5em auto 1em;
-  /* background: var(--clr-light); */
-  opacity: 0.25;
-}
-
-.services {
-  margin-bottom: 4em;
+  margin: 0.5em auto 0;
+  background: var(--clr-dark);
 }
 
 .service {
-  max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 .service__p {
-  padding: 0 30px;
+  padding: 1em 2em 1em 2em;
+  margin: 0 0 1em 0;
 }
 
 @media (min-width: 800px) {
   .services {
     display: flex;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
   }
-
+  /* 
   .services + .service {
     margin-left: 2em;
-  }
+    justify-content: space-around;
+  } */
 }
 
 /*------------------- ABOUT ME -------------------*/
-.about-me {
+/* .about-me {
   max-width: 1100px;
   margin: 0 auto;
-}
-
-.about-me__img {
-  box-shadow: var(--bs);
-  padding: 20px 5px;
-  min-width: 250px;
-}
+} */
 
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
     grid-template-areas:
       "title img"
       "subtitle img"
       "text img";
-    grid-column-gap: 2em;
+    grid-column-gap: 0.5em;
+    align-items: center;
   }
   .section__title--about {
     grid-area: title;
+  }
+}
+
+@media (min-width: 800px) {
+  .about-me {
+    grid-template-columns: 1fr 350px;
   }
 
   .section__subtitle--about {
@@ -379,15 +384,18 @@ header {
     left: -1em;
     width: calc(100% + 2em);
     padding-left: 1em;
-    padding-right: calc(200px + 4em);
-  }
-
-  .about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
+    padding-right: calc(200px + 8em);
+    margin: 0;
   }
 }
+
+.about-me__img {
+  grid-area: img;
+  z-index: 2;
+  /* box-shadow: var(--bs); */
+}
+
+/*------------------- ABOUT ME -------------------*/
 
 .my-work {
   padding-top: 0 5px;
@@ -479,7 +487,7 @@ header {
 /* PARTICLES */
 
 #particles-js {
-  height: 900px;
+  height: 700px;
   position: absolute;
   width: 100%;
   margin: 0;
@@ -491,7 +499,7 @@ header {
 
 @media (max-width: 600px) {
   #particles-js {
-    height: 1600px;
+    height: 1100px;
   }
 }
 
@@ -611,14 +619,14 @@ header {
 }
 
 .container .content {
-  padding: 30px 90px 30px 30px;
+  padding: 10px 90px 10px 30px;
   background: var(--clr-grey);
   position: relative;
   /* border-radius: 0 500px 500px 0; */
 }
 
 .container.right .content {
-  padding: 30px 30px 30px 90px;
+  padding: 10px 30px 10px 90px;
   /* border-radius: 500px 0 0 500px; */
 }
 
