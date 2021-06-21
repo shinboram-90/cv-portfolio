@@ -148,7 +148,7 @@
   padding: 20px;
   background: var(--clr-grey);
   position: relative;
-  font-family: var(--ff-secondary);
+  /* font-family: var(--ff-secondary); */
   /* border-radius: 0 500px 500px 0; */
 }
 
