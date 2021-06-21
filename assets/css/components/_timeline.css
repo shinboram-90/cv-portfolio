@@ -34,7 +34,7 @@
   left: 50%;
 }
 /*------------------- ROUND SHAPES -------------------*/
-.container::after {
+/* .container::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -49,21 +49,49 @@
 
 .container.right::after {
   left: -8px;
+} */
+
+/*------------------- LOSANGES -------------------*/
+
+.container.left::before {
+  position: absolute;
+  content: "";
+  color: #333;
+  width: 16px;
+  height: 16px;
+  background: var(--clr-grey);
+  /* border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee; */
+  transform: rotate(45deg) translate(-50%, -50%);
+  border-radius: 2px;
+  top: calc(50% - 10px);
+  right: 23px;
 }
 
-.container::before {
+/* .container::before {
   content: "";
   position: absolute;
   width: 50px;
   height: 2px;
-  top: calc(50% - 1px);
+
   right: 8px;
   background: var(--clr-dark);
   z-index: 1;
-}
+} */
 
 .container.right::before {
-  left: 8px;
+  position: absolute;
+  content: "";
+  color: #333;
+  width: 16px;
+  height: 16px;
+  background: var(--clr-grey);
+  /* border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee; */
+  transform: rotate(45deg) translate(-50%, -50%);
+  border-radius: 2px;
+  top: calc(50% - 10px);
+  left: 23px;
 }
 
 /* .container .date {
@@ -87,25 +115,26 @@
 /*------------------- ICONS -------------------*/
 .container .icon {
   position: absolute;
-  display: inline-block;
+  /* display: inline-block; */
   width: 40px;
   height: 40px;
   padding: 9px 0;
-  top: calc(50% - 20px);
+  top: calc(50% - 35px);
   background: var(--clr-light);
   border: 2px solid var(--clr-dark);
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
   z-index: 1;
+  color: var(--clr-purple);
 }
 
 .container.left .icon {
-  right: 56px;
+  right: -20px;
 }
 
 .container.right .icon {
-  left: 56px;
+  left: -20px;
 }
 
 .container .content {
@@ -153,7 +182,7 @@
 
   .container.left::before,
   .container.right::before {
-    left: 100px;
+    left: 112px;
     border-color: transparent var(--clr-dark) transparent transparent;
   }
 
@@ -166,19 +195,18 @@
   .container.left .icon,
   .container.right .icon {
     right: auto;
-    left: 146px;
+    left: 70px;
   }
 
   .container.left .content,
   .container.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 20px;
     /* border-radius: 500px 0 0 500px; */
   }
 }
 
 .timeline .timeline-container .timeline-body:before {
   content: "";
-  background: inherit;
   width: 20px;
   height: 20px;
   display: block;
@@ -186,4 +214,9 @@
   left: -10px;
   transform: rotate(45deg);
   border-radius: 0 0 0 2px;
+}
+
+.le-w {
+  top: 0;
+  position: absolute;
 }
