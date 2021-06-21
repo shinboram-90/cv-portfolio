@@ -1,0 +1,53 @@
+/*--------------- My services --------------*/
+.my-services {
+  background-color: transparent;
+  /* background: url(/assets/images/projects.svg); */
+  color: var(--clr-dark);
+  text-align: center;
+  padding: 2em 0 2em 0;
+  /* margin-bottom: 1em; */
+}
+
+.section__title--services {
+  color: var(--clr-dark);
+  position: relative;
+}
+
+/*--------------- underline --------------*/
+
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 2.5em;
+  height: 1px;
+  margin: 0.5em auto 0;
+  background: var(--clr-dark);
+}
+
+.service {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.service__p {
+  padding: 1em 2em 1em 2em;
+  margin: 0 0 1em 0;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .service {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+  /* 
+  .services + .service {
+    margin-left: 2em;
+    justify-content: space-around;
+  } */
+}
