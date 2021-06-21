@@ -1,0 +1,9 @@
+.section__cv {
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.section__cv > a {
+  margin: 30px 30px 30px 30px;
+}
