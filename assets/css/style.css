@@ -24,7 +24,7 @@
   --clr-light: #fff;
   --clr-purple: #842c4b;
   --clr-dark: #303030;
-  --clr-grey: #e5e5e5;
+  --clr-grey: #f5f2f2;
   --clr-accent: rgba(22, 224, 189, 0.7);
   /* #16e0bd; plus flashy ptet mieux*/
 
@@ -124,4 +124,10 @@ h4 {
 
 section {
   padding: 2em 2em;
+}
+
+@media (min-width: 800px) {
+  section {
+    padding: 2em 5em;
+  }
 }

@@ -17,6 +17,13 @@
   bottom: 0;
   left: 50%;
   margin-left: -1px;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(80, 80, 80, 0) 0%,
+    rgb(80, 80, 80) 7%,
+    rgb(80, 80, 80) 93%,
+    rgba(80, 80, 80, 0) 100%
+  ); */
 }
 
 .container {
