@@ -31,7 +31,8 @@
 
 .service__p {
   padding: 1em 2em 1em 2em;
-  margin: 0 0 1em 0;
+  margin: 0 auto;
+  text-align: start;
 }
 
 @media (min-width: 800px) {
@@ -45,9 +46,22 @@
     flex-shrink: 1;
     flex-basis: 0;
   }
+
+  .service__p {
+    width: 400px;
+  }
   /* 
   .services + .service {
     margin-left: 2em;
     justify-content: space-around;
   } */
+}
+
+.fa-square {
+  font-size: 0.5em;
+  color: rgb(22, 224, 189);
+  padding: 1px;
+  margin-right: 5px;
+  border: solid 1px;
+  border-radius: 1px;
 }
