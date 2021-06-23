@@ -149,3 +149,22 @@ section {
     border-color: #666;
   }
 }
+
+#button {
+  display: none;
+  font-size: 3em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 1;
+  color: var(--clr-accent);
+  z-index: 1000;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+/* .fa-arrow-circle-up {
+  
+} */

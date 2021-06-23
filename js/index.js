@@ -157,3 +157,45 @@ window.addEventListener("load", () => {
 // window.addEventListener("load", function(evt) {
 //   alert("hello");
 // });
+
+const btn = document.querySelector("#button");
+window.addEventListener("scroll", () => {
+  if (window.scrollTop > 300) {
+    btn.classList.add("show");
+  } else {
+    btn.classList.remove("show");
+  }
+});
+
+// btn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   html.animate({ scrollTop: 0 }, "300");
+// });
+
+document.addEventListener("scroll", handleScroll);
+// get a reference to our predefined button
+var scrollToTopBtn = document.querySelector("#button");
+
+function handleScroll() {
+  var scrollableHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var GOLDEN_RATIO = 0.1;
+
+  if (document.documentElement.scrollTop / scrollableHeight > GOLDEN_RATIO) {
+    //show button
+    scrollToTopBtn.style.display = "block";
+  } else {
+    //hide button
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+btn.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
