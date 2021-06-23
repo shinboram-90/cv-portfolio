@@ -13,6 +13,8 @@
   display: inline-block;
 }
 
+/* 1100px est un pb responsive... */
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
