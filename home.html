@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lisa Portfolio</title>
+    <title>Lisa Web Developer Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -56,7 +56,12 @@
     </form>
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi there, I am <strong>Lisa Chatellier</strong>
+        <span
+          class="txt-rotate"
+          data-period="2000"
+          data-rotate='[ "Hi there", "Bonjour", "Holà", "안녕하세요", "こんいちは" ]'
+        ></span
+        >, I'm <strong>Lisa Chatellier</strong>
       </h1>
       <img src="/images/intro.svg" alt="an illustration" class="intro__img" />
     </section>
@@ -65,7 +70,7 @@
 
     <div id="particles-js"></div>
     <div class="my-services" id="services">
-      <h2 class="section__title section__title--services">My skills</h2>
+      <h2 class="section__title section__title--underline">My skills</h2>
       <div class="services">
         <div class="service">
           <h3>Front-end</h3>
@@ -277,8 +282,8 @@
 
     <!-- MY WORK -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle">Under construction</p>
+      <h2 class="section__title section__title--underline">My work</h2>
+      <!-- <p class="section__subtitle">Under construction</p> -->
       <div class="portfolio">
         <a
           href="https://a-day-in-a-movie.herokuapp.com"

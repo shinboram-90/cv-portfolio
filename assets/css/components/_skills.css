@@ -8,14 +8,15 @@
   /* margin-bottom: 1em; */
 }
 
-.section__title--services {
+.section__title--underline {
   color: var(--clr-dark);
   position: relative;
+  text-align: center;
 }
 
 /*--------------- underline --------------*/
 
-.section__title--services::after {
+.section__title--underline::after {
   content: "";
   display: block;
   width: 2.5em;
