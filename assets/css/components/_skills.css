@@ -4,7 +4,7 @@
   /* background: url(/assets/images/projects.svg); */
   color: var(--clr-dark);
   text-align: center;
-  padding: 2em 0 2em 0;
+  padding: 2em 4em 2em 4em;
   /* margin-bottom: 1em; */
 }
 
@@ -48,9 +48,9 @@
     flex-basis: 0;
   }
 
-  .service__p {
+  /* .service__p {
     width: 400px;
-  }
+  } */
   /* 
   .services + .service {
     margin-left: 2em;
