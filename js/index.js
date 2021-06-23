@@ -199,3 +199,11 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
+
+// const smooth = document.getElementsByClassName("smooth");
+// function scrollToTop() {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// }
