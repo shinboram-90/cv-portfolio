@@ -207,3 +207,5 @@ function scrollToTop() {
 //     behavior: "smooth",
 //   });
 // }
+
+AOS.init();
