@@ -36,7 +36,7 @@
     padding: 15px;
   }
 
-  form {
+  .form--intro {
     width: 100%;
     top: 310px;
     position: absolute;
