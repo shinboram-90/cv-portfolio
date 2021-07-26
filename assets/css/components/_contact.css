@@ -86,3 +86,36 @@
     );
   }
 }
+
+.control--message > .textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.control--message {
+  height: 150px;
+}
+
+.control--half {
+  height: 50px;
+}
+
+.control > input {
+  font-family: var(--ff-secondary);
+  width: 70%;
+  height: 100%;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+}
+
+.control {
+  padding: 5px 0;
+}
+
+.btn--form {
+  margin: 0;
+}
