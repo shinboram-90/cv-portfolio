@@ -7,3 +7,21 @@
 .section__cv > a {
   margin: 25px 30px 20px 30px;
 }
+
+/* .arrow {
+  width: 50px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  38% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+    }
+} */

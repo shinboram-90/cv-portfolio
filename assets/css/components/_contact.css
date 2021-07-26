@@ -1,0 +1,88 @@
+.contact {
+  display: flex;
+}
+
+.form-container {
+  /* width: 60%; */
+  /* height: 400px;
+  padding: 50px; */
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 28% 75%, 13% 91%, 14% 75%, 0 75%);
+
+  right: 2em;
+}
+
+@media (min-width: 200px) {
+  .section__contact {
+    margin-top: 2em;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .form-container {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 85%,
+      50% 85%,
+      44% 100%,
+      31% 85%,
+      0 85%
+    );
+    /* width: 83%; */
+    padding: 10px;
+    height: 380px;
+    left: 2em;
+    right: 2em;
+    background-color: var(--clr-purple);
+    position: absolute;
+    top: 0;
+  }
+  .contact__img {
+    margin-top: 300px;
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .form-container {
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% 75%,
+      28% 75%,
+      23% 91%,
+      14% 75%,
+      0 75%
+    );
+    left: 15em;
+    right: 2em;
+    height: 450px;
+  }
+  .section__contact {
+    margin-top: 5em;
+  }
+  .img-div {
+    max-width: 700px;
+  }
+  .contact__img {
+    margin-top: 280px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .form-container {
+    left: 20em;
+    width: 60%;
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% 75%,
+      28% 75%,
+      13% 91%,
+      14% 75%,
+      0 75%
+    );
+  }
+}
