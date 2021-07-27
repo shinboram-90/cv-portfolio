@@ -182,7 +182,7 @@
   color: var(--clr-dark);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .timeline::after {
     left: 50px;
   }

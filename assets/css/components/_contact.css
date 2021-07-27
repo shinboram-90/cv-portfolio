@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .form-container {
     clip-path: polygon(
       0 0,
