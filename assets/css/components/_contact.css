@@ -33,7 +33,8 @@
     height: 380px;
     left: 2em;
     right: 2em;
-    background-color: var(--clr-purple);
+    border-radius: 1px;
+    background-color: var(--clr-grey);
     position: absolute;
     top: 0;
   }
@@ -75,6 +76,7 @@
   .form-container {
     left: 20em;
     width: 60%;
+    padding: 20px;
     clip-path: polygon(
       0 0,
       100% 0%,
@@ -85,4 +87,52 @@
       0 75%
     );
   }
+  .contact__img {
+    margin-top: 260px;
+  }
+}
+
+.control--message > .textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.control--message {
+  height: 150px;
+}
+
+.control--half {
+  height: 50px;
+}
+
+.control > input,
+textarea {
+  font-family: var(--ff-secondary);
+  width: 70%;
+  height: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-color: var(--clr-dark);
+}
+
+textarea {
+  border-width: 1px 1px 1px 1px;
+}
+
+.control {
+  padding: 10px 0;
+}
+
+.btn--form {
+  margin: 0 auto;
+}
+
+.btn-container {
+  width: 100%;
+  display: inline-flex;
+}
+
+::placeholder {
+  color: var(--clr-dark);
 }
